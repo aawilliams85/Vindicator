@@ -52,9 +52,14 @@ controller_data_t;
 // declare the controller struct for use
 controller_data_t controller_data;
 
-// Some other variables to blink an LED
-uint32_t interval = 25; //refresh time in ms
-uint32_t next_time = 0;
+uint16_t input_data = 0; // I/O data from this scan
+uint16_t input_data_last = 0; // I/O data from the previous scan
+uint32_t interval_gpio = 25; // Time interval to check GPIO for new data (ms)
+uint32_t next_time_gpio = 0;
+
+uint32_t interval_send = 1000; // Time interval to send data to tracker, even if no data has changed (ms)
+uint32_t next_time_send = 0;
+bool send_requested = false;
 bool led_state = false;
 
 void setup() {
@@ -80,27 +85,26 @@ void setup() {
 
 // the loop function runs over and over again forever
 void loop() {
-  // Flag will be true when the library is ready for new data
-  if ( tundra_tracker.data_ready() )
-  {
-    // Copy our controller struct to the data packet
-    tundra_tracker.send_data( &controller_data, sizeof(controller_data) );
-
-    // House keeping function for the library that should be ran right after data is ready
-    tundra_tracker.handle_rx_data( );
+  if (millis() > next_time_gpio) {
+    input_data = ~mcp.readGPIOAB();
+    //Serial.println(input_data);
+    next_time_gpio = millis() + interval_gpio;
   }
-  
-  // Framework for a subroutine that runs every 250ms, not nessesary for all examples but slows down how fast our data is incrementing and allows us
-  // to blink an LED at human speeds
-  if ( millis() > next_time )
-  {
-    // Twiddle the LED
-    digitalWrite(RP2040_BB_LED, led_state ^= true);
-    controller_data.buttons = ~mcp.readGPIOAB();
-    Serial.println(controller_data.buttons);
 
-    // Setup the next refresh time
-    next_time = millis() + interval;
+  if ((millis() > next_time_send)||(input_data != input_data_last)) {
+    controller_data.buttons = input_data;
+    send_requested = true;
+    next_time_send = millis() + interval_send;
+  }
+
+  if (send_requested) {
+    if (tundra_tracker.data_ready()){
+      tundra_tracker.send_data(&controller_data, sizeof(controller_data));
+      tundra_tracker.handle_rx_data();
+      digitalWrite(RP2040_BB_LED, led_state ^= true);
+      input_data_last = input_data;
+      send_requested = false;
+    }
   }
 }
 
