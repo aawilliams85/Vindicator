@@ -1,0 +1,26 @@
+Drill report for tundraSaber.kicad_pcb
+Created on 2024-05-27T22:07:10-0400
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'tundraSaber-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.300mm  0.0118"  (29 holes)
+    T2  0.813mm  0.0320"  (8 holes)
+    T3  0.991mm  0.0390"  (4 holes)
+    T4  1.000mm  0.0394"  (8 holes)
+    T5  1.194mm  0.0470"  (8 holes)
+
+    Total plated holes count 57
+
+
+Drill file 'tundraSaber-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+
+    Total unplated holes count 0

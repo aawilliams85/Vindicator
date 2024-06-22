@@ -1,0 +1,205 @@
+{
+    "jsonid": "input_profile",
+    "controller_type": "vindicator",
+    "legacy_profile": "vindicator",
+    "legacy_binding": "{vindicator}/input/legacy_bindings_vindicator.json",
+    "input_bindingui_mode": "controller_handed",
+    "input_bindingui_left": {
+        "image": "{vindicator}/icons/vindicator.png"
+    },
+    "input_bindingui_right": {
+        "image": "{vindicator}/icons/vindicator.png"
+    },
+    "input_source": {
+        "/input/joy1up" : {
+          "type" : "button",
+          "click" : true,
+          "binding_image_point" : [ 26, 42 ],
+          "order" : 0
+        },
+        "/input/joy1down" : {
+          "type" : "button",
+          "click" : true,
+          "binding_image_point" : [ 26, 42 ],
+          "order" : 1
+        },
+        "/input/joy1left" : {
+          "type" : "button",
+          "click" : true,
+          "binding_image_point" : [ 26, 42 ],
+          "order" : 2
+        },
+        "/input/joy1right" : {
+          "type" : "button",
+          "click" : true,
+          "binding_image_point" : [ 26, 42 ],
+          "order" : 3
+        },
+        "/input/joy1center" : {
+          "type" : "button",
+          "click" : true,
+          "binding_image_point" : [ 26, 42 ],
+          "order" : 4
+        },
+        "/input/joy2up" : {
+          "type" : "button",
+          "click" : true,
+          "binding_image_point" : [ 26, 42 ],
+          "order" : 5
+        },
+        "/input/joy2down" : {
+          "type" : "button",
+          "click" : true,
+          "binding_image_point" : [ 26, 42 ],
+          "order" : 6
+        },
+        "/input/joy2left" : {
+          "type" : "button",
+          "click" : true,
+          "binding_image_point" : [ 26, 42 ],
+          "order" : 7
+        },
+        "/input/joy2right" : {
+          "type" : "button",
+          "click" : true,
+          "binding_image_point" : [ 26, 42 ],
+          "order" : 8
+        },
+        "/input/joy2center" : {
+          "type" : "button",
+          "click" : true,
+          "binding_image_point" : [ 26, 42 ],
+          "order" : 9
+        },
+
+        "/input/btn1" : {
+          "type" : "button",
+          "click" : true,
+          "binding_image_point" : [ 26, 42 ],
+          "order" : 10
+        },
+        "/input/btn2" : {
+          "type" : "button",
+          "click" : true,
+          "binding_image_point" : [ 26, 42 ],
+          "order" : 11
+        },
+        "/input/dip1" : {
+          "type" : "button",
+          "click" : true,
+          "binding_image_point" : [ 26, 42 ],
+          "order" : 12
+        },
+        "/input/dip2" : {
+          "type" : "button",
+          "click" : true,
+          "binding_image_point" : [ 26, 42 ],
+          "order" : 13
+        },
+        "/input/dip3" : {
+          "type" : "button",
+          "click" : true,
+          "binding_image_point" : [ 26, 42 ],
+          "order" : 14
+        },
+        "/input/dip4" : {
+          "type" : "button",
+          "click" : true,
+          "binding_image_point" : [ 26, 42 ],
+          "order" : 15
+        },
+        "/pose/raw": {
+            "type": "pose",
+            "binding_image_point": [
+                5,
+                35
+            ]
+        },
+        "/output/haptic": {
+            "type": "vibration",
+            "binding_image_point": [
+                5,
+                35
+            ]
+        }
+    },
+    "input_components": {
+        "/input/joy1up/click": {
+            "bit_offset": 0,
+            "type": "bool"
+        },
+        "/input/joy1down/click": {
+            "bit_offset": 2,
+            "type": "bool"
+        },
+        "/input/joy1left/click": {
+            "bit_offset": 1,
+            "type": "bool"
+        },
+        "/input/joy1right/click": {
+            "bit_offset": 12,
+            "type": "bool"
+        },
+        "/input/joy1center/click": {
+            "bit_offset": 8,
+            "type": "bool"
+        },
+        "/input/joy2up/click": {
+            "bit_offset": 3,
+            "type": "bool"
+        },
+        "/input/joy2down/click": {
+            "bit_offset": 5,
+            "type": "bool"
+        },
+        "/input/joy2left/click": {
+            "bit_offset": 4,
+            "type": "bool"
+        },
+        "/input/joy2right/click": {
+            "bit_offset": 14,
+            "type": "bool"
+        },
+        "/input/joy2center/click": {
+            "bit_offset": 15,
+            "type": "bool"
+        },
+        "/input/btn1/click": {
+            "bit_offset": 13,
+            "type": "bool"
+        },
+        "/input/btn2/click": {
+            "bit_offset": 11,
+            "type": "bool"
+        },
+        "/input/dip1/click": {
+            "bit_offset": 7,
+            "type": "bool"
+        },
+        "/input/dip2/click": {
+            "bit_offset": 6,
+            "type": "bool"
+        },
+        "/input/dip3/click": {
+            "bit_offset": 10,
+            "type": "bool"
+        },
+        "/input/dip4/click": {
+            "bit_offset": 9,
+            "type": "bool"
+        },
+	"/output/haptic" : {
+		"type" : "vibration"
+	}
+    },
+    "default_bindings" : [
+    {
+      "app_key" : "openvr.component.vrcompositor",
+      "binding_url" : "openvr.component.vrcompositor_vindicator.json"
+    },
+    {
+      "app_key" : "steam.app.620980",
+      "binding_url" : "steam.app.620980_vindicator.json"
+    }
+  ]
+}

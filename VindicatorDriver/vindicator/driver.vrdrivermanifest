@@ -1,0 +1,7 @@
+{
+	"alwaysActivate": true,
+	"name" : "vindicator",
+	"directory" : "",
+	"resourceOnly" : false,
+	"hmd_presence" : []
+}

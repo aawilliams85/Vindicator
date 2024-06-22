@@ -1,0 +1,23 @@
+[
+    {
+        "language_tag": "en_US",
+        "vindicator": "Vindicator",
+        "vindicator_raw": "Vindicator Raw",
+        "/input/joy1up": "Joystick 1 Up",
+        "/input/joy1down": "Joystick 1 Down",
+        "/input/joy1left": "Joystick 1 Left",
+        "/input/joy1right": "Joystick 1 Right",
+        "/input/joy1center": "Joystick 1 Center",
+        "/input/joy2up": "Joystick 2 Up",
+        "/input/joy2down": "Joystick 2 Down",
+        "/input/joy2left": "Joystick 2 Left",
+        "/input/joy2right": "Joystick 2 Right",
+        "/input/joy2center": "Joystick 2 Center",
+        "/input/btn1": "Button 1",
+        "/input/btn2": "Button 2",
+        "/input/dip1": "DIP Switch 1",
+        "/input/dip2": "DIP Switch 2",
+        "/input/dip3": "DIP Switch 3",
+        "/input/dip4": "DIP Switch 4"
+    }
+]

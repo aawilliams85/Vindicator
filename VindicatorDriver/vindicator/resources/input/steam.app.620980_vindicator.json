@@ -1,0 +1,401 @@
+{
+   "action_manifest_version" : 0,
+   "alias_info" : {},
+   "app_key" : "steam.app.620980",
+   "bindings" : {
+      "/actions/htcvivecontroller" : {
+         "haptics" : [
+            {
+               "output" : "/actions/htcvivecontroller/out/haptic",
+               "path" : "/user/hand/left/output/haptic"
+            },
+            {
+               "output" : "/actions/htcvivecontroller/out/haptic",
+               "path" : "/user/hand/right/output/haptic"
+            }
+         ],
+         "poses" : [
+            {
+               "output" : "/actions/htcvivecontroller/in/devicepose",
+               "path" : "/user/hand/left/pose/raw"
+            },
+            {
+               "output" : "/actions/htcvivecontroller/in/devicepose",
+               "path" : "/user/hand/right/pose/raw"
+            }
+         ],
+         "sources" : [
+            {
+               "inputs" : {
+                  "value" : {
+                     "output" : "/actions/htcvivecontroller/in/trigger"
+                  }
+               },
+               "mode" : "scalar_constant",
+               "path" : "/user/hand/left/input/joy1down"
+            },
+            {
+               "inputs" : {
+                  "value" : {
+                     "output" : "/actions/htcvivecontroller/in/trigger"
+                  }
+               },
+               "mode" : "scalar_constant",
+               "path" : "/user/hand/right/input/joy1down"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/htcvivecontroller/in/trigger"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/joy1down"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/htcvivecontroller/in/trigger"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/joy1down"
+            }
+         ]
+      },
+      "/actions/lasermouse" : {
+         "haptics" : [
+            {
+               "output" : "/actions/lasermouse/out/haptic",
+               "path" : "/user/hand/left/output/haptic"
+            },
+            {
+               "output" : "/actions/lasermouse/out/haptic",
+               "path" : "/user/hand/right/output/haptic"
+            }
+         ],
+         "poses" : [
+            {
+               "output" : "/actions/lasermouse/in/Pointer",
+               "path" : "/user/hand/left/pose/tip"
+            },
+            {
+               "output" : "/actions/lasermouse/in/Pointer",
+               "path" : "/user/hand/right/pose/tip"
+            },
+            {
+               "output" : "/actions/lasermouse/in/pointer",
+               "path" : "/user/hand/left/pose/raw"
+            },
+            {
+               "output" : "/actions/lasermouse/in/pointer",
+               "path" : "/user/hand/right/pose/raw"
+            }
+         ],
+         "sources" : [
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/lasermouse/in/LeftClick"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/lasermouse/in/LockMousePosition"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.1",
+                  "click_deactivate_threshold" : "0.05",
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/right/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/lasermouse/in/Back"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/grip"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/lasermouse/in/Home"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/application_menu"
+            },
+            {
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/lasermouse/in/TrackpadValue"
+                  },
+                  "touch" : {
+                     "output" : "/actions/lasermouse/in/TrackpadTouch"
+                  }
+               },
+               "mode" : "trackpad",
+               "path" : "/user/hand/right/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "scroll" : {
+                     "output" : "/actions/lasermouse/in/TrackpadScroll"
+                  }
+               },
+               "mode" : "trackpad_scroll",
+               "path" : "/user/hand/right/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "east" : {
+                     "output" : "/actions/lasermouse/in/RightClick"
+                  }
+               },
+               "mode" : "dpad_click",
+               "path" : "/user/hand/right/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/lasermouse/in/LeftClick"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/lasermouse/in/LockMousePosition"
+                  }
+               },
+               "mode" : "button",
+               "parameters" : {
+                  "click_activate_threshold" : "0.1",
+                  "click_deactivate_threshold" : "0.05",
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/lasermouse/in/Back"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/grip"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/lasermouse/in/Home"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/application_menu"
+            },
+            {
+               "inputs" : {
+                  "position" : {
+                     "output" : "/actions/lasermouse/in/TrackpadValue"
+                  },
+                  "touch" : {
+                     "output" : "/actions/lasermouse/in/TrackpadTouch"
+                  }
+               },
+               "mode" : "trackpad",
+               "path" : "/user/hand/left/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "scroll" : {
+                     "output" : "/actions/lasermouse/in/TrackpadScroll"
+                  }
+               },
+               "mode" : "trackpad_scroll",
+               "path" : "/user/hand/left/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "east" : {
+                     "output" : "/actions/lasermouse/in/RightClick"
+                  }
+               },
+               "mode" : "dpad_click",
+               "path" : "/user/hand/left/input/trackpad"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/lasermouse/in/leftclick"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/joy1down"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/lasermouse/in/leftclick"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/joy1down"
+            }
+         ]
+      },
+      "/actions/lasermouse_secondary" : {
+         "poses" : [],
+         "sources" : [
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/lasermouse_secondary/in/SwitchLaserHand"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/lasermouse_secondary/in/SwitchLaserHand"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/lasermouse_secondary/in/switchlaserhand"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/joy1down"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/lasermouse_secondary/in/switchlaserhand"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/joy1down"
+            }
+         ]
+      },
+      "/actions/system" : {
+         "chords" : [
+            {
+               "inputs" : [
+                  [ "/user/hand/left/input/system", "held" ],
+                  [ "/user/hand/left/input/trigger", "click" ]
+               ],
+               "output" : "/actions/system/in/TakeScreenshot"
+            },
+            {
+               "inputs" : [
+                  [ "/user/hand/right/input/system", "held" ],
+                  [ "/user/hand/right/input/trigger", "click" ]
+               ],
+               "output" : "/actions/system/in/TakeScreenshot"
+            }
+         ],
+         "sources" : [
+            {
+               "inputs" : {},
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {},
+               "mode" : "button",
+               "parameters" : {
+                  "haptic_amplitude" : "0"
+               },
+               "path" : "/user/hand/right/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/system/in/ToggleDashboard"
+                  },
+                  "double" : {
+                     "output" : "/actions/system/in/ToggleRoomView"
+                  },
+                  "held" : {
+                     "output" : "/actions/system/in/SystemButtonChord"
+                  },
+                  "long" : {
+                     "long_press_delay" : 1.5,
+                     "output" : "/actions/system/in/ShowPowerMenu"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/system"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/system/in/ToggleDashboard"
+                  },
+                  "double" : {
+                     "output" : "/actions/system/in/ToggleRoomView"
+                  },
+                  "held" : {
+                     "output" : "/actions/system/in/SystemButtonChord"
+                  },
+                  "long" : {
+                     "long_press_delay" : 1.5,
+                     "output" : "/actions/system/in/ShowPowerMenu"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/system"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/system/in/toggledashboard"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/left/input/joy1up"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/system/in/toggledashboard"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/joy1up"
+            }
+         ]
+      }
+   },
+   "category" : "openxr",
+   "controller_type" : "vindicator",
+   "description" : "",
+   "interaction_profile" : "/interaction_profiles/htc/vive_controller",
+   "name" : "Official Beat Saber configuration for Vindicator",
+   "options" : {
+      "simulated_controller_type" : "none"
+   },
+   "simulated_actions" : []
+}
