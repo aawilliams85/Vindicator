@@ -1,4 +1,6 @@
-Based on Tundra Labs sample project here: https://github.com/tundra-labs/rp2040_examples
+SteamVR Saber Staff based on Tundra Labs sample project here: https://github.com/tundra-labs/rp2040_examples
+![Vanquisher Assembled](https://github.com/user-attachments/assets/a8963114-0400-49d0-bbd0-622c49ecac14)
+![Vanquisher Parts](https://github.com/user-attachments/assets/524e640e-56ec-4427-9a9f-e16506df9018)
 
 ## Structure
 The subfolders in the main directory are as follows:
